@@ -1,0 +1,14 @@
+@import "../global.scss";
+
+.checkboxGroup {
+  position: relative;
+  display: grid;
+  grid-row-gap: 24px;
+}
+
+@include breakpoint("large") {
+  .checkboxGroup {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+}

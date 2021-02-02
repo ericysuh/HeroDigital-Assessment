@@ -1,0 +1,49 @@
+@import "../global.scss";
+
+.textField {
+  position: relative;
+}
+
+.label {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: $inputLabelColor;
+}
+
+.input {
+  margin-top: 10px;
+  padding: 16px;
+  width: $inputWidthSize;
+  border: 3px solid $inputBorderColor;
+  box-shadow: $boxShadowColor;
+  outline: none;
+
+  &:focus,
+  &:hover {
+    border-color: $inputBorderColorActive;
+  }
+}
+
+.labelRequired:after {
+  content: "*";
+}
+
+.inputError {
+  background-color: $inputBackgroundColorError;
+  border-color: $inputBorderColorError;
+
+  &:focus,
+  &:hover {
+    border-color: $inputBorderColorError;
+  }
+}
+
+.inputDisabled {
+  background-color: $inputBackgroundColorDisabled;
+  border-color: $inputBorderColorDisabled;
+
+  &:focus,
+  &:hover {
+    border-color: $inputBorderColorDisabled;
+  }
+}

@@ -1,0 +1,37 @@
+@import "../global.scss";
+
+.dropdown {
+  position: relative;
+}
+
+.label {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: $inputLabelColor;
+}
+
+.labelRequired:after {
+  content: "*";
+}
+
+.select {
+  margin-top: 10px;
+  padding: 16px;
+  border: 3px solid $inputBorderColor;
+  box-shadow: $boxShadowColor;
+  outline: none;
+
+  font-size: 13px;
+  text-transform: uppercase;
+  color: $inputLabelColor;
+
+  &:focus,
+  &:hover {
+    border-color: $inputBorderColorActive;
+  }
+}
+
+// find another way maybe?
+.inputError .select {
+  border-color: $inputBorderColorError;
+}

@@ -1,0 +1,49 @@
+@import "../global.scss";
+
+.button {
+  font-size: 13px;
+  color: $fontColorButton;
+  background-color: $buttonColor;
+  text-transform: uppercase;
+  padding: 12px 45px;
+  border: 1px solid $buttonColor;
+  border-radius: 30px;
+  box-shadow: $boxShadowColor;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: $buttonColorHover;
+    border-color: $buttonColorHover;
+  }
+  &:active {
+    background-color: $buttonColor;
+    border-color: $buttonColor;
+  }
+}
+
+.buttonReset {
+  background-color: $buttonColorReset;
+  border-color: $buttonColorReset;
+  color: $fontColorButtonReset;
+  &:focus,
+  &:hover {
+    background-color: $buttonColorResetHover;
+    border-color: $buttonColorResetHover;
+  }
+  &:active {
+    background-color: $buttonColorReset;
+    border-color: $buttonColorReset;
+  }
+}
+
+.buttonDisabled {
+  background-color: $buttonColorDisabled;
+  border-color: $buttonColorDisabled;
+  color: $fontColorButtonDisabled;
+  cursor: auto;
+  &:focus,
+  &:hover {
+    background-color: $buttonColorDisabled;
+    border-color: $buttonColorDisabled;
+  }
+}

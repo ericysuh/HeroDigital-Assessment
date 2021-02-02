@@ -1,0 +1,50 @@
+@import "../global.scss";
+
+.heading {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.comment {
+  margin: 15px 0 0;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.formInputs {
+  display: grid;
+  grid-row-gap: 24px;
+}
+
+.input {
+  width: 100%;
+}
+
+.dropdown {
+  margin-top: 24px;
+}
+
+.checkBoxes {
+  margin-top: 24px;
+}
+
+.formActions {
+  margin-top: 85px;
+}
+
+.buttonReset {
+  margin-left: 20px;
+}
+
+@include breakpoint("large") {
+  .formContainer {
+    width: 728px;
+    margin: 0 auto;
+  }
+  .formInputs {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+}

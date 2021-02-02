@@ -1,0 +1,21 @@
+@import "../global.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  margin: 0;
+  color: $fontColorPrimary;
+  font-size: 12px;
+}
+
+body {
+  background-image: url("../../assets/texture.jpg");
+}
+
+.app {
+  padding: 20px;
+}

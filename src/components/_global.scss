@@ -1,0 +1,75 @@
+/* Colors
+------------------------------------------ */
+$black: #000000;
+$white: #ffffff;
+$red: #ee0c63;
+$pink: #ee859a;
+$pink-light: #efe0e0;
+$teal: #99d1cc;
+$grey: #404040;
+$boron: #555555;
+$carbon: #333333;
+$iron: #777777;
+$nickel: #aaaaaa;
+$titanium: #e5e5e5;
+$oxygen: #f2f2f2;
+$purple: #803093;
+$purple-light: #ac5ebf;
+
+/* Font Colors
+------------------------------------------ */
+$fontColorBlack: $black;
+$fontColorWhite: $white;
+$fontColorPrimary: $grey;
+$fontColorSecondary: $boron;
+$fontColorTertiary: $carbon;
+$fontColorError: $red;
+$fontColorButton: $white;
+$fontColorButtonReset: $carbon;
+$fontColorButtonDisabled: $white;
+
+// 3c3c3c
+
+/* Box Shadow Color
+------------------------------------------ */
+$boxShadowColor: 1px 2px rgba(0, 0, 0, 0.3);
+
+/* Form Inputs
+------------------------------------------ */
+$inputPaddingSize: 8px;
+$inputWidthSize: 250px;
+$inputBackgroundColor: $white;
+$inputBackgroundColorError: $pink-light;
+$inputBackgroundColorDisabled: $oxygen;
+
+$inputBorderColor: $titanium;
+$inputBorderColorActive: $teal;
+$inputBorderColorError: $pink;
+$inputBorderColorDisabled: $nickel;
+
+$inputLabelColor: $fontColorTertiary;
+$inputTextColor: $fontColorSecondary;
+$inputErrorColor: $red;
+$inputCheckboxCheckedColor: $purple;
+
+/* Button
+------------------------------------------ */
+$buttonWidthSize: 130px;
+$buttonColor: $purple;
+$buttonColorHover: $purple-light;
+$buttonColorDisabled: $nickel;
+$buttonColorHoverDisabled: $iron;
+$buttonColorReset: $white;
+$buttonColorResetHover: $oxygen;
+
+/* Breakpoint
+------------------------------------------ */
+$small-breakpoint: 768px;
+
+@mixin breakpoint($bp) {
+  @if ($bp == "large") {
+    @media (min-width: $small-breakpoint) {
+      @content;
+    }
+  }
+}
